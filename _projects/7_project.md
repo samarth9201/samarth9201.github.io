@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "SurfStore : Distribted Dropbox Clone"
-description: Fault-tolerant distributed system for syncing files accross multiple devices.
+title: "AimRange"
+description: First-person shooter with target practice
 img: assets/img/12.jpg
-importance: 1
-category: work
+importance: 3
+category: fun
 related_publications: false
 ---
 

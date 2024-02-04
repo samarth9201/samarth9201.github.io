@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "SurfStore : Distribted Dropbox Clone"
-description: Fault-tolerant distributed system for syncing files accross multiple devices.
+title: "ToDoList"
+description: To Do List
 img: assets/img/12.jpg
-importance: 1
-category: work
+importance: 3
+category: fun
 related_publications: false
 ---
 

@@ -20,6 +20,26 @@
       }
     ]
   },
+  "education": [
+    {
+      "institution": "University of California, San Diego",
+      "location": "La Jolla, CA",
+      "url": "https://www.ucsd.edu/",
+      "area": "Computer Science",
+      "studyType": "MS in Computer Science",
+      "startDate": "2022-09-01",
+      "endDate": "2024-06-01"
+    },
+    {
+      "institution": "Pune Institute of Computer Technlogy",
+      "location": "Pune, India",
+      "url": "https://www.pict.edu/",
+      "area": "Computer Science",
+      "studyType": "BE in Computer Engineering",
+      "startDate": "2018-06-01",
+      "endDate": "2022-06-01"
+    }
+  ],
   "work": [
     {
       "name": "UC San Diego",
@@ -86,26 +106,7 @@
       ]
     }
   ],
-  "education": [
-    {
-      "institution": "University of California, San Diego",
-      "location": "La Jolla, CA",
-      "url": "https://www.ucsd.edu/",
-      "area": "Computer Science",
-      "studyType": "MS in Computer Science",
-      "startDate": "2022-09-01",
-      "endDate": "2024-06-01"
-    },
-    {
-      "institution": "Pune Institute of Computer Technlogy",
-      "location": "Pune, India",
-      "url": "https://www.pict.edu/",
-      "area": "Computer Science",
-      "studyType": "BE in Computer Engineering",
-      "startDate": "2018-06-01",
-      "endDate": "2022-06-01"
-    }
-  ],
+  "projects": [],
   "certificates": [
     {
       "name": "Google Cybersecurity Professional Certificate",
@@ -132,6 +133,5 @@
       "fluency": "Native speaker",
       "icon": ""
     }
-  ],
-  "projects": []
+  ]
 }

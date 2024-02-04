@@ -1,7 +1,7 @@
 ---
 layout: page
-title: "SurfStore : Distribted Dropbox Clone"
-description: Fault-tolerant distributed system for syncing files accross multiple devices.
+title: "TritonHTTP"
+description: Personalized implementation of the HTTP Protocol.
 img: assets/img/12.jpg
 importance: 1
 category: work

@@ -1,10 +1,10 @@
 ---
 layout: page
-title: project 6
-description: a project with no image
+title: NFT Marketplace
+description: Scalable platform for trading NFTs
 img:
 importance: 4
-category: fun
+category: work
 ---
 
 Every project has a beautiful feature showcase page.

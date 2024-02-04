@@ -1,7 +1,7 @@
 ---
 layout: page
-title: project 4
-description: another without an image
+title: Automatic Plant Watering System
+description: Efficient automated plant hydration system.
 img:
 importance: 3
 category: fun

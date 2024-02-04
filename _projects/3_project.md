@@ -1,10 +1,10 @@
 ---
 layout: page
-title: project 3
-description: a project that redirects to another website
+title: Feed Amalgamator
+description: Unified Mastodon feed aggregator.
 img: assets/img/7.jpg
-redirect: https://unsplash.com
-importance: 3
+redirect: https://github.com/CSE210-Team-5/CSE210-Team5-Feed-Amalgamator
+importance: 2
 category: work
 ---
 
