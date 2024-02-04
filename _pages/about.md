@@ -21,7 +21,7 @@ Put your address / P.O. box / other info right below your picture. You can also 
 
 Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them. -->
 
-I am a second year Masters student in the Computer Science department at the [University of California - San Diego](https://ucsd.edu/). My experience spans across various fields within computer science. At present, I am primarily focused on Systems and Security.  I have expertise in languages like Go, Java, C/C++, JavaScript, and Python. I have also worked on projects involving web development, distributed systems, robotics, and IoT, you can checkout my work [here](/projects/).
+I am a second year Masters student in the Computer Science department at the [University of California - San Diego](https://ucsd.edu/). My experience spans across various fields within computer science. At present, I am primarily focused on Systems and Security. I have expertise in languages like Go, Java, C/C++, JavaScript, and Python. I have also worked on projects involving web development, distributed systems, robotics, and IoT, you can checkout my work [here](/projects/).
 
 Beyond academics, I genuinely enjoy the process of learning, whether it's picking up a new programming language, studying an academic topic, or even learning to play a new game. I find joy in expanding my knowledge and continuously challenging myself to grasp new concepts and skills. In my free time I love playing [Chess](https://www.chess.com/member/samarth9201) or Badminton.
 
