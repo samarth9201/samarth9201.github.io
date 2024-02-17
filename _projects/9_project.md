@@ -8,74 +8,14 @@ category: work
 related_publications: false
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+TritonHTTP is a simple web server project aimed at implementing a subset of the HTTP/1.1 protocol specification. Built using the Go programming language, TritonHTTP allows clients to connect and retrieve files from the server over a TCP connection. The server is designed to handle multiple client requests concurrently, providing a basic yet functional web server experience.
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+##### Key Features:
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+1. [HTTP/1.1 Protocol Implementation](https://www.w3.org/Protocols/HTTP/1.1/draft-ietf-http-v11-spec-01): TritonHTTP adheres to a minimal subset of the HTTP/1.1 protocol specification, supporting essential features such as request/response exchanges, header parsing, and status code handling.
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
+2. [HTTP Persistent Connections](https://en.wikipedia.org/wiki/HTTP_persistent_connection): TritonHTTP supports HTTP persistent connections, enabling clients to reuse TCP connections for multiple request/response interactions. This helps reduce the overhead of establishing new connections for each request.
 
-You can also put regular text between your rows of images, even citations {% cite einstein1950meaning %}.
-Say you wanted to write a bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+3. [Virtual Hosting](https://en.wikipedia.org/wiki/Virtual_hosting): The project implements virtual hosting, allowing multiple web servers to be hosted on a single physical machine. Each server is associated with a unique host name and document root directory, enabling the server to serve content based on the "Host" header in the client's request.
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
-
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
-
-{% endraw %}
+4. [Error Handling](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status): TritonHTTP includes robust error handling mechanisms to deal with malformed or invalid client requests. It responds with appropriate HTTP status codes, such as 400 Bad Request and 404 Not Found, to indicate errors to the client.
