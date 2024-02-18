@@ -2,7 +2,8 @@
 layout: page
 title: Noteflix
 description: Music Streaming Application
-img: assets/img/1.jpg
+img: assets/img/Noteflix.jpg
+redirect: https://github.com/samarth9201/music-stream-decentralized
 importance: 3
 category: fun
 ---

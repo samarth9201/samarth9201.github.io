@@ -2,7 +2,7 @@
 layout: page
 title: "AimRange"
 description: First-person shooter with target practice
-img: assets/img/12.jpg
+img: assets/img/AimRange.png
 importance: 3
 category: fun
 related_publications: false
