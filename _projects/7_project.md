@@ -4,7 +4,7 @@ title: "AimRange"
 description: First-person shooter with target practice
 img: assets/img/AimRange.png
 importance: 1
-redirect: https://github.com/samarth9201/aim-range
+redirect: https://github.com/samarth9201/
 category: fun
 related_publications: false
 ---
