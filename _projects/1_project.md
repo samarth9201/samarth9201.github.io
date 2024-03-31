@@ -1,27 +1,27 @@
 ---
 layout: page
-title: "SurfStore : Distribted Dropbox Clone"
+title: "CloudSync : Distribted Dropbox Clone"
 description: Fault-tolerant distributed system for syncing files accross multiple devices.
-img: assets/img/SurfStore-Architecture.png
+img: assets/img/CloudSync-Architecture.png
 importance: 1
 category: work
 related_publications: false
 ---
 
-SurfStore is a networked file storage application that is based on Dropbox, and lets you sync files to and from the “cloud”. The project involved the development of a fault-tolerant distributed system designed to synchronize files across multiple clients, utilizing the power of [Go](https://go.dev/) and the efficiency of the [gRPC](https://grpc.io/) protocol. Leveraging a scalable architecture, the system was engineered with a robust fault-tolerant mechanism inspired by the [RAFT consensus](https://raft.github.io/) system, which guaranteed continuous operation even in the event of server crashes. Through meticulous testing and debugging phases, the team ensured the reliability and efficiency of the solution, successfully enabling it to handle concurrent file operations from numerous clients simultaneously. The end result was a resilient and efficient file syncing system capable of seamlessly managing data transfer across distributed networks with minimal downtime or disruptions.
+CloudSync is a networked file storage application that is based on Dropbox, and lets you sync files to and from the “cloud”. The project involved the development of a fault-tolerant distributed system designed to synchronize files across multiple clients, utilizing the power of [Go](https://go.dev/) and the efficiency of the [gRPC](https://grpc.io/) protocol. Leveraging a scalable architecture, the system was engineered with a robust fault-tolerant mechanism inspired by the [RAFT consensus](https://raft.github.io/) system, which guaranteed continuous operation even in the event of server crashes. Through meticulous testing and debugging phases, the team ensured the reliability and efficiency of the solution, successfully enabling it to handle concurrent file operations from numerous clients simultaneously. The end result was a resilient and efficient file syncing system capable of seamlessly managing data transfer across distributed networks with minimal downtime or disruptions.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/SurfStore-Architecture.png" title="SurfStore Architecture" class="img-fluid rounded" %}
+        {% include figure.liquid path="assets/img/CloudSync-Architecture.png" title="CloudSync Architecture" class="img-fluid rounded" %}
     </div>
 </div>
 <div class="caption">
-    Architecture of SurfStore
+    Architecture of CloudSync
 </div>
 
-The SurfStore service is composed of the following two services:
+The CloudSync service is composed of the following two services:
 
-- **BlockStore**: The content of each file in SurfStore is divided up into chunks, or blocks, each of which has a unique identifier. This service stores these blocks, and when given an identifier, retrieves and returns the appropriate block.
+- **BlockStore**: The content of each file in CloudSync is divided up into chunks, or blocks, each of which has a unique identifier. This service stores these blocks, and when given an identifier, retrieves and returns the appropriate block.
 - **MetaStore** : The MetaStore service manages the metadata of files and the entire system. Most importantly, the MetaStore service holds the mapping of filenames to blocks. Furthermore, it should be aware of available BlockStores and map blocks to particular BlockStores. In a real deployment, a cloud file service like Dropbox or Google Drive will hold exabytes of data, and so will require 10s of thousands of BlockStores or more to hold all that data.
 
-In SurfStore, we have implemented Fault-Tolerent Consensus Algorithm called [RAFT protocol](https://raft.github.io/). Because data blocks are immutable and cannot be updated (since doing so would change their hash values, and thus they’d become entirely new blocks), replicating blocks is quite easy. On the other hand, replicating the MetaStore service is quite challenging, because multiple clients can update the Metadata of a file in a concurrent manner. To ensure that the Metadata store is fault tolerant and stays consistent regardless of failures, we have implemented it as a replicated state machine design.
+In CloudSync, we have implemented Fault-Tolerent Consensus Algorithm called [RAFT protocol](https://raft.github.io/). Because data blocks are immutable and cannot be updated (since doing so would change their hash values, and thus they’d become entirely new blocks), replicating blocks is quite easy. On the other hand, replicating the MetaStore service is quite challenging, because multiple clients can update the Metadata of a file in a concurrent manner. To ensure that the Metadata store is fault tolerant and stays consistent regardless of failures, we have implemented it as a replicated state machine design.

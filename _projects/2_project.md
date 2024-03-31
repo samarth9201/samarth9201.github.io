@@ -3,7 +3,7 @@ layout: page
 title: "AutoBot"
 description: Autonomous Four-Wheel Drive.
 img: assets/img/Roomba.png
-importance: 2
+importance: 1
 category: work
 ---
 

@@ -4,7 +4,7 @@ title: Feed Amalgamator
 description: Unified Mastodon feed aggregator.
 img: assets/img/bugs_bunny_mastodon.jpeg
 redirect: https://github.com/CSE210-Team-5/CSE210-Team5-Feed-Amalgamator
-importance: 2
+importance: 1
 category: work
 ---
 
