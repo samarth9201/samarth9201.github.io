@@ -1,12 +1,9 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - samarth9201
 
 github_repos:
-  - alshedivat/al-folio
-  - twbs/bootstrap
-  - jekyll/jekyll
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - jpswalsh/academicons
-  - mathjax/MathJax
+  - samarth9201/samarth9201.github.io
+  - samarth9201/NoteFlix
+  - samarth9201/Feed-Amalgamator
+  - samarth9201/cryptoacres
+  - samarth9201/time-capsule
